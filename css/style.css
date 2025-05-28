@@ -1,0 +1,761 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+html{
+	font-size: 100%;
+}
+
+body{
+	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.7;
+	letter-spacing: 0.15rem;
+	padding-top: 65px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	position: relative;
+	display: inline-block;
+}
+
+img{
+	max-width: 100%;
+}
+
+/* 見出し（英語）の設定 */
+
+.heading{
+	font-family: 'futura-pt', sans-serif;
+	font-weight: 400;
+}
+
+/* 各コンテンツ幅の設定 */
+
+.wrapper{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 4%;
+}
+
+/* ヘッダー */
+
+.page-header{
+	width: 100%;
+	background-color: white;
+	z-index: 1000;
+}
+
+.head-wrapper{
+	padding: 0 15.5% 1rem;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.head-wrapper img{
+	width: 20%;
+	height: auto;
+	margin: 0;
+}
+
+.main-navi{
+	display: flex;
+	list-style: none;
+	font-size: 1.187rem;
+	margin-top: 50px;
+}
+
+.main-navi li{
+	margin-left: 100px;
+}
+
+.main-navi a{
+	position: relative;
+}
+
+.main-navi a::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #c17a7a;
+	transition: width 0.3s ease-in-out;
+}
+
+.main-navi a:hover{
+	color: #cb8f8d;
+}
+
+.main-navi a:hover::after{
+	width: 100%;
+}
+
+
+/* KV */
+
+.key-visual{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.top-title h2{
+	font-size: 4.68rem;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.65rem;
+	margin-top: 75%;
+}
+
+.top-title span{
+	padding-left: 7.5rem;
+}
+
+.top-title p{
+	font-size: 1rem;
+	margin-left: 1%;
+}
+
+.key-visual img{
+	width: 55%;
+	height: auto;
+}
+
+/* ABOUT */
+
+.profile{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 7%;
+	margin-top: 100px;
+}
+
+.profile h3{
+	font-size: 2.18rem;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+}
+
+.profile img{
+	width: 37%;
+	object-fit: cover;
+}
+
+.profile-wrapper{
+	width: 100%;
+	background-color: #fbf2ed;
+	padding: 30px 30px 50px;
+}
+
+.profile-wrapper p{
+	font-size: 1.06rem;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.induction{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.induction img{
+	display: block;
+	width: 20px;
+	height: auto;
+	margin-right: 1%;
+}
+
+.induction a{
+	font-weight: 500;
+	position: relative;
+}
+
+.induction a::after{
+	content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #c17a7a;
+    transition: width 0.3s ease-in-out;
+}
+
+.induction a:hover{
+    color: #cb8f8d;
+}
+
+.induction a:hover::after{
+    width: 100%;
+}
+
+
+/* ABOUT_遷移先ページ */
+
+.pf-section-heading{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.lead{
+	font-size: 1.5rem;
+}
+
+.pf-section-image img{
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.section-text{
+	text-align: center;
+}
+
+/* SKILL */
+
+.section-skills{
+	text-align: center;
+}
+
+.skill-subtile{
+	font-size: 1.68rem;
+}
+
+.skill-content{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.skill-content div{
+	display: flex;
+	gap: 3%;
+	justify-content: space-between;
+	margin: 40px 0;
+}
+
+.skill-content dt{
+	flex-basis: 35%;
+}
+
+.skill-content dd{
+	flex-basis: 65%;
+}
+
+.tools{
+	font-size: 0.87rem;
+	font-weight: 500;
+	color: #747272;
+}
+
+hr{
+	border: none;
+	border-top: 2px dashed  #e8d4c6;
+}
+
+/* VISION */
+
+.vision-wrapper{
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.vision-lead{
+	padding: 0 50px;
+}
+
+.vision-wrapper img{
+	width: 40%;
+	height: auto;
+}
+
+/* WORK */
+
+.home-content{
+	margin-top: 100px;
+	padding-top: 3.75rem;
+	padding-bottom: 6.25rem;
+	background-color: #e5eff0;
+}
+
+.home-content h3{
+	font-size: 2.18rem;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 4rem;
+	letter-spacing: 0.2rem;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+
+.item{
+	position: relative;
+	display: inline-block;
+}
+
+.item .overlay{
+	position: absolute;
+	top: 10%;
+	left: 8%;
+	width: 85%;
+	height: 78%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
+	font-size: 1rem;
+	font-weight: 500;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	font-size: 1.5rem;
+}
+
+.item:hover .overlay{
+	opacity: 1;
+}
+
+/* WORK各ページ内のリンク */
+
+.work-link{
+	background-color: #e5eff0;
+	padding: 60px 85px;
+}
+
+.all-works-title{
+	margin-bottom: 2rem;
+}
+
+.wl-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 100px;
+}
+
+/* お問い合わせフォーム */
+
+.center-wrapper{
+	max-width: 650px;
+	margin: 35px auto 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.center-wrapper h3{
+	font-size: 2.18rem;
+	font-weight: 500;
+	margin-bottom: 3rem;
+}
+
+.contact-btn{
+	display: inline-block;
+	background-color: #e5eff0;
+	padding: 15px 27px;
+	border-radius: 8px;
+	text-decoration: none;
+	margin: 80px 0;
+}
+
+.contact-btn:hover{
+	background-color: #cb8f8d;
+	color: white;
+}
+
+/* フッター */
+
+footer{
+	background-color: #e8d4c6;
+	text-align: center;
+	padding: 26px 0;
+}
+
+footer p{
+	color: white;
+	font-size: 1rem;
+}
+
+/* WORK各ページの設定
+------------------------------ */
+
+/* タイトル */
+.work_title{
+	font-size: 2.18rem;
+	font-weight: 500;
+	margin: 70px 0 50px 0;
+	text-align: center;
+}
+
+/* WORK_webデザインのサブタイトル */
+.work_subtitle{
+	font-size: 1.68rem;
+	font-weight: 500;
+	margin: 50px 0;
+	text-align: center;
+}
+
+/* 名刺ページの背景色 */
+.work_header{
+	max-width: 100vw;
+	background-color: #e5eff0;
+	padding: 65px 0;
+}
+
+/* バナーの背景色 */
+.banner-wrap{
+	background-color: #e5eff0;
+	padding: 90px 0;
+}
+
+.bento{
+	background-color: #fbf2ed;
+}
+
+/* 画像 */
+.image-container{
+	max-width: 830px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.image-container img{
+	width: 85%;
+	height: auto;
+	box-shadow: 8px 16px 60px rgba(0, 0, 0, 0.2);
+}
+
+
+/* bs_image 名刺ページの画像設定・配置 */
+.bs-image{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bs-image img{
+	max-width: 85%;
+	height: auto;
+	margin: 20px 0;
+	box-shadow: 3px 13px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* work_webデザインページの設定 */
+
+.school_lp_container{
+	margin: 80px auto
+}
+
+.task_lp_container{
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	margin: 80px auto;
+}
+
+.task_img{
+	flex: 1;
+	margin: 0 23px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 50%;
+}
+
+.task_img img{
+	max-width: 100%;
+	height: auto;
+	box-shadow: 10px 10px 38px 7px rgba(0, 0, 0, 0.2);	
+}
+
+/* バナー画像の配置 */
+.banner-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-container img{
+	box-shadow: 20px 20px 60px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* dl_説明文の配置 */
+.work-content{
+	max-width: 700px;
+	margin: 65px auto 100px auto;
+}
+
+.work-content div{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.work-content dt{
+	font-size: 1.06rem;
+	font-weight: 500;
+	flex-basis: 20%;
+	color: #7abbc1;
+}
+
+.work-content dd{
+	flex-basis: 80%;
+}
+
+/* バナーアドビロゴ説明文 */
+.adobe{
+	font-size: 0.93rem;
+}
+
+/* モバイル版
+------------------------ */
+
+@media (max-width: 600px){
+
+	body{
+		padding-top: 80px;
+	}
+
+	/* ヘッダー */
+
+	.head-wrapper{
+		padding: 0 4% 2%;
+	}
+
+	.main-navi{
+		font-size: 1.063rem;
+	}
+
+	.main-navi li{
+		margin-left: 40px;
+	}
+
+
+	/* KV */
+	
+	.key-visual{
+		display: flex;
+		justify-content: center;
+	}	
+
+	.top-title{
+		padding: 0 0.75rem;
+	}
+
+	.top-title h2{
+		font-size: 2.81rem;
+		letter-spacing: 0.15rem;
+		margin-top: 40%;
+	}
+	
+	.top-title span{
+		padding-left: 4.06rem;
+	}
+
+	
+	/* About */
+	
+	.profile{
+		margin-top: 60px;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	.profile-wrapper{
+		padding: 25px 30px 32px;
+	}
+	
+	.profile h3{
+		font-size: 1.75rem;
+		text-align: right;
+		padding-right: 5rem;
+	}
+	
+	.responsive-img{
+		position: absolute;
+		left: 0;
+		top: -65px;
+		height: 50%;
+	}
+	
+	.profile p{
+		font-size: 1rem;
+		text-align: center;
+		padding: 0;
+		margin-top: 7px;
+	}
+
+	.induction img{
+		width: 6%;
+		height: auto;
+		margin-right: 1%;
+	}
+	
+	/* ABOUT　遷移ページ */
+
+	.lead{
+		font-size: 1.12rem;
+	}
+
+	.pf-section-image{
+		width: 100%;
+	}
+	.skill-content div{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.skill-content dd{
+		margin-top: 4%;
+	}
+
+	.skill-content img{
+		width: 15%;
+		height: auto;
+	}
+
+	.vision-wrapper{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.vision-lead{
+		padding-top: 2rem;
+	}
+
+	.vision-wrapper img{
+		width: 55%;
+	}
+	
+	/* WORK */
+
+	.home-content{
+		margin-top: 45px;
+		padding: 2.5rem 1.87rem 4.06rem;
+	}
+
+	.home-content h3{
+		font-size: 1.75rem;
+		margin-bottom: 2.18rem;
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.item .overlay{
+		opacity: 0.9;
+	}
+
+	/* CONTACT */
+
+	.center-wrapper{
+		margin: 20px auto;
+	}
+
+	form{
+		margin-top: 20px;
+	}
+
+	textarea{
+		margin-bottom: 20px;
+	}
+
+	/* WORKページ */
+
+	.work_header{
+		padding: 50px 0;
+	}
+
+	.work_title{
+		font-size: 1.75rem;
+		margin: 30px 0;
+	}
+
+	.work-content{
+		padding: 0 35px;
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+
+	.work-content div{
+		flex-direction: column;
+		margin: 20px 0;
+	}
+
+	.image-container img{
+		width: 90%;
+		height: auto;
+	}
+
+	.all-works-title{
+		text-align: center;
+	}
+
+	.work-link{
+		padding: 30px 45px;
+	}
+
+	.wl-container{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	/* webデザインページ */
+
+	.work_subtitle{
+		font-size: 1.5rem;
+		margin-top: 30px;
+		margin-bottom: 43px;
+	}
+
+	/* 画像の設定 */
+
+	.head-wrapper img{
+		width: 90%;
+		height: auto;
+	}
+
+	.image-container img{
+		box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.banner-container img{
+		box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.school_lp_container{
+		width: 80%;
+		height: auto;
+	}
+	
+	.task_img img{
+		box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.2);	
+	}
+
+}
